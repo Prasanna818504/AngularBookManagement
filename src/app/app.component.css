@@ -106,6 +106,8 @@ form button:hover {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .search-button {
@@ -115,6 +117,8 @@ form button:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .price-filter {
@@ -124,7 +128,13 @@ form button:hover {
 }
 
 .price-input-container {
+  display: flex;
+  align-items: center;
   flex: 1;
+  margin-right: 10px;
+}
+
+.price-label {
   margin-right: 10px;
 }
 
@@ -133,6 +143,8 @@ form button:hover {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .filter-button {
@@ -142,6 +154,8 @@ form button:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .sort-button-container {
@@ -167,6 +181,8 @@ form button:hover {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .add-button {
@@ -183,6 +199,13 @@ form button:hover {
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  font-family: 'Georgia', serif; /* Change font family */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Adjust font color */
+}
+
+.book-item span {
+  font-weight: bold; /* Make book details bold */
 }
 
 .delete-button {
@@ -192,4 +215,31 @@ form button:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.search-input, .price-input, .form-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 40px; /* Ensure uniform height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search-button, .filter-button, .sort-button, .add-button, .delete-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px; /* Ensure uniform height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search-button:hover, .filter-button:hover, .sort-button:hover, .add-button:hover, .delete-button:hover {
+  background-color: #0056b3;
 }

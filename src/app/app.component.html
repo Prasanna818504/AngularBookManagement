@@ -9,11 +9,11 @@
 
     <div class="price-filter">
       <div class="price-input-container">
-        <label>Min Price: </label>
+        <label class="price-label">Min Price: </label>
         <input [(ngModel)]="minPrice" type="number" class="price-input" />
       </div>
       <div class="price-input-container">
-        <label>Max Price: </label>
+        <label class="price-label">Max Price: </label>
         <input [(ngModel)]="maxPrice" type="number" class="price-input" />
       </div>
       <button (click)="filterBooks()" class="filter-button">Filter</button>
